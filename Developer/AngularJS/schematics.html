@@ -1,0 +1,53 @@
+ngRepeat directive
+html
+arrays
+<element ng-repeat="i in [0, 1, etc.]"></element>
+objects
+<element ng-repeat="object in objects"></element>
+
+subelements
+<element ng-repeat="i in [0, 1, etc.]">
+	<subElement></subElement>
+</element>
+
+recursion
+<element ng-repeat="i in [0, 1, etc.]">
+	<subElement ng-repeat="j in [0, 1, etc.]"></subElement>
+</element>
+
+ngSrc directive
+html
+<a href="#/phones/{{phone.id}}" class="thumb"><img ng-src="{{phone.imageUrl}}"></a>
+
+
+filter function
+html
+<input ng-model="query">
+<element ng-repeat="object in objects | filter:query"></element>
+
+orderBy function
+html
+<select ng-model="orderProp">
+  <option value="name">Alphabetical</option>
+  <option value="age">Newest</option>
+</select>
+<element ng-repeat="object in objects | orderBy:orderProp">
+	<span>{{phone.name}}</span>
+    <p>{{phone.snippet}}</p>
+</element>
+
+Double-curly binding
+{{}}
+
+html
+{{'yet' + '!'}} => yet!
+
+html
+{{ 1 + 2 }} => 3
+
+js
+var object = {
+	property: 'red',
+};
+html
+{{ object.property }} => red
