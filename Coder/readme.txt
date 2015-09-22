@@ -1,1 +1,0 @@
-.ico files should be 256x256 pixels or else windows explorer does not show a full size icon.
