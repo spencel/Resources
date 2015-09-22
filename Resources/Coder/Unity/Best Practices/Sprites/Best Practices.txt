@@ -1,0 +1,2 @@
+1) Design sprites on a gray (neutral) background. If it pops (looks good) on a neutral background then it will look good on anything.
+2) Typical game resolutions are 640x480, 800x600, 1024x768.
